@@ -5,8 +5,9 @@ process.on('unhandledRejection', err => {
 })
 
 const spawn = require('cross-spawn')
+const runCommitizen = require('commitizen/dist/cli/git-cz').bootstrap
 
-const { resolveInDir, resolveBin } = require('./resolve-utils')
+const { resolveInDir, resolveModule, resolveBin } = require('./resolve-utils')
 
 const CLICargs = process.argv.slice(3)
 const runCommand = (command, args, { resolveCommand = true } = {}) => {
@@ -65,12 +66,16 @@ switch (scriptName) {
     ])
     break
   case 'precommit':
-    runCommand('lint-staged', ['--config', resolveInDir('./.lintstagedrc.js')])
-    runCommand('yarn', ['run', 'lint'], { resolveCommand: false })
-    runCommand('yarn', ['test'], { resolveCommand: false })
+    // runCommand('lint-staged', ['--config', resolveInDir('./.lintstagedrc.js')])
+    // runCommand('yarn', ['run', 'lint'], { resolveCommand: false })
+    // runCommand('yarn', ['test'], { resolveCommand: false })
     break
   case 'cz':
-    runCommand('git-cz')
+    process.argv = []
+    runCommitizen({
+      cliPath: resolveModule('commitizen'),
+      config: { path: resolveModule('@commitlint/prompt') }
+    })
     break
   default:
     console.log('Unknown script "' + scriptName + '".')
