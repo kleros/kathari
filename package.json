@@ -1,0 +1,58 @@
+{
+  "name": "kleros-js-scripts",
+  "version": "0.0.1",
+  "description":
+    "Linting and formatting scripts that follow JS Standard Style.",
+  "repository": "https://github.com/kleros/kleros-js-scripts",
+  "author": "Kleros",
+  "license": "MIT",
+  "private": false,
+  "bin": "./index.js",
+  "scripts": {
+    "prettify": "node ./index.js prettify",
+    "lint": "node ./index.js lint",
+    "test":
+      "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
+    "commitmsg": "node ./index.js commitmsg",
+    "precommit": "node ./index.js precommit",
+    "cz": "node ./index.js cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/prompt"
+    }
+  },
+  "dependencies": {
+    "@commitlint/cli": "^6.1.0",
+    "@commitlint/config-conventional": "^6.1.0",
+    "@commitlint/prompt": "^6.1.0",
+    "babel-eslint": "^8.2.1",
+    "commitizen": "^2.9.6",
+    "cross-spawn": "^6.0.4",
+    "eslint": "^4.17.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-jsx": "^4.0.2",
+    "eslint-plugin-flowtype": "^2.43.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-unicorn": "^3.0.1",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.3.0",
+    "stylelint-selector-bem-pattern": "^2.0.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "standard-version": "^4.3.0"
+  }
+}
