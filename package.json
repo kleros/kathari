@@ -1,8 +1,7 @@
 {
   "name": "kleros-js-scripts",
-  "version": "0.0.2",
-  "description":
-    "Linting and formatting scripts that follow JS Standard Style.",
+  "version": "0.1.0",
+  "description": "Linting and formatting scripts that follow JS Standard Style.",
   "repository": "https://github.com/kleros/kleros-js-scripts",
   "author": "Kleros",
   "license": "MIT",
@@ -11,8 +10,7 @@
   "scripts": {
     "prettify": "node ./index.js prettify",
     "lint": "node ./index.js lint",
-    "test":
-      "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
+    "test": "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
     "precommit": "node ./index.js precommit",
     "commitmsg": "node ./index.js commitmsg",
     "cz": "node ./index.js cz"
