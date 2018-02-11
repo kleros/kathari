@@ -13,8 +13,8 @@
     "lint": "node ./index.js lint",
     "test":
       "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
-    "commitmsg": "node ./index.js commitmsg",
     "precommit": "node ./index.js precommit",
+    "commitmsg": "node ./index.js commitmsg",
     "cz": "node ./index.js cz"
   },
   "config": {
