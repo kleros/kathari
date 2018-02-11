@@ -4,13 +4,9 @@ process.on('unhandledRejection', err => {
   throw err
 })
 
-const { resolve, join } = require('path')
-
 const spawn = require('cross-spawn')
 
-const resolveInDir = filePath => resolve(__dirname, filePath)
-const resolveBin = filePath =>
-  resolveInDir(join('./node_modules/.bin', filePath))
+const { resolveInDir, resolveBin } = require('./resolve-utils')
 
 const CLICargs = process.argv.slice(3)
 const runCommand = (command, args, { resolveCommand = true } = {}) => {
