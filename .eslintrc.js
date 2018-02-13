@@ -14,6 +14,16 @@ module.exports = {
   // Rule Overrides
   rules: {
     // Generic JS
+    'no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'all',
+        ignoreRestSiblings: false,
+        caughtErrors: 'all',
+        varsIgnorePattern: '_'
+      }
+    ],
     'arrow-body-style': [2, 'as-needed'],
 
     // unicorn
