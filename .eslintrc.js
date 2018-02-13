@@ -21,8 +21,8 @@ module.exports = {
         args: 'all',
         ignoreRestSiblings: false,
         caughtErrors: 'all',
-        varsIgnorePattern: '_',
-        argsIgnorePattern: '_'
+        varsIgnorePattern: '^_',
+        argsIgnorePattern: '^_'
       }
     ],
     'arrow-body-style': [2, 'as-needed'],
