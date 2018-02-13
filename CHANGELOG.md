@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+
+# [0.2.0](https://github.com/kleros/kleros-js-scripts/compare/v0.1.2...v0.2.0) (2018-02-13)
+
+### Features
+
+* fix error handling and react indent issue ([63099e7](https://github.com/kleros/kleros-js-scripts/commit/63099e7))
+
 <a name="0.1.2"></a>
 
 ## [0.1.2](https://github.com/kleros/kleros-js-scripts/compare/v0.1.1...v0.1.2) (2018-02-11)
