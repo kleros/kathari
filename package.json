@@ -1,6 +1,6 @@
 {
   "name": "kleros-js-scripts",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description":
     "Linting and formatting scripts that follow JS Standard Style.",
   "repository": "https://github.com/kleros/kleros-js-scripts",

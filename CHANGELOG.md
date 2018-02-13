@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1"></a>
+
+## [0.3.1](https://github.com/kleros/kleros-js-scripts/compare/v0.3.0...v0.3.1) (2018-02-13)
+
+### Bug Fixes
+
+* **eslint:** ignore args for unused vars rule ([af2a148](https://github.com/kleros/kleros-js-scripts/commit/af2a148))
+
 <a name="0.3.0"></a>
 
 # [0.3.0](https://github.com/kleros/kleros-js-scripts/compare/v0.2.0...v0.3.0) (2018-02-13)
