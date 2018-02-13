@@ -53,6 +53,7 @@ module.exports = {
       }
     ],
     'react/jsx-no-bind': 2,
+    'react/jsx-indent': 0,
 
     // React
     'react/prefer-stateless-function': 2,

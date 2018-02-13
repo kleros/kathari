@@ -19,7 +19,7 @@ const runCommand = (command, args, { resolveCommand = true } = {}) => {
     }
   )
 
-  if (result.signal) {
+  if (result.signal || result.status) {
     if (result.signal === 'SIGKILL') {
       console.log(
         'Failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.'
