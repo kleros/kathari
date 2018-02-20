@@ -1,8 +1,8 @@
 {
-  "name": "kleros-js-scripts",
+  "name": "kleros-scripts",
   "version": "0.3.2",
   "description":
-    "Linting and formatting scripts that follow JS Standard Style.",
+    "Linting and formatting scripts for multiple types of projects.",
   "keywords": ["linter", "formatter", "standard-js"],
   "repository": "https://github.com/kleros/kleros-js-scripts",
   "author": "Kleros",
