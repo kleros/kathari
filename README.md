@@ -1,5 +1,5 @@
 <p align="center">
-  <b style="font-size: 32px;">Kleros JS Scripts</b>
+  <b style="font-size: 32px;">kleros-scripts</b>
 </p>
 
 <p align="center">
