@@ -14,8 +14,8 @@
 
 ## Scripts
 
-* `kleros-js-scripts prettify` - Apply prettier to the entire project.
-* `kleros-js-scripts lint` - Lint the entire project's `.js` and `.scss` files.
-* `kleros-js-scripts commitmsg` - Lint commit messages on a githook.
-* `kleros-js-scripts precommit` - Lint and run tests on a githook.
-* `kleros-js-scripts cz` - Run commitizen.
+* `kleros-scripts prettify` - Apply prettier to the entire project.
+* `kleros-scripts lint` - Lint the entire project's `.js` and `.scss` files.
+* `kleros-scripts commitmsg` - Lint commit messages on a githook.
+* `kleros-scripts precommit` - Lint and run tests on a githook.
+* `kleros-scripts cz` - Run commitizen.
