@@ -44,17 +44,19 @@ switch (scriptName) {
       './{src,.storybook,stories,demo/src,mocks,tests}/**/*.js{on,}'
     ])
     break
-  case 'lint':
+  case 'lint:scss':
+    runCommand('stylelint', [
+      '--config',
+      resolveInDir('./.stylelintrc.js'),
+      './{src,demo/src}/**/*.scss'
+    ])
+    break
+  case 'lint:js':
     runCommand('eslint', [
       '--config',
       resolveInDir('./.eslintrc.js'),
       './*.js',
       './{src,.storybook,stories,demo/src,mocks,tests}/**/*.js'
-    ])
-    runCommand('stylelint', [
-      '--config',
-      resolveInDir('./.stylelintrc.js'),
-      './{src,demo/src}/**/*.scss'
     ])
     break
   case 'commitmsg':

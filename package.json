@@ -11,7 +11,7 @@
   "bin": "./index.js",
   "scripts": {
     "prettify": "node ./index.js prettify",
-    "lint": "node ./index.js lint",
+    "lint": "node ./index.js lint:scss && node ./index.js lint:js",
     "test":
       "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
     "precommit": "node ./index.js precommit",
