@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+
+# [0.5.0](https://github.com/kleros/kleros-js-scripts/compare/v0.4.0...v0.5.0) (2018-03-22)
+
+### Features
+
+* **eslint:** add prefer-const ([85ed9cc](https://github.com/kleros/kleros-js-scripts/commit/85ed9cc))
+* **scripts:** set kleros github labels ([55c707e](https://github.com/kleros/kleros-js-scripts/commit/55c707e))
+
 <a name="0.4.0"></a>
 
 # [0.4.0](https://github.com/kleros/kleros-js-scripts/compare/v0.3.3...v0.4.0) (2018-02-27)
