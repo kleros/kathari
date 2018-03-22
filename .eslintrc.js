@@ -15,7 +15,7 @@ module.exports = {
   rules: {
     // Generic JS
     'no-unused-vars': [
-      'error',
+      2,
       {
         vars: 'all',
         args: 'all',
@@ -25,6 +25,7 @@ module.exports = {
         argsIgnorePattern: '^_'
       }
     ],
+    'prefer-const': 2,
     'arrow-body-style': [2, 'as-needed'],
 
     // unicorn
