@@ -1,9 +1,12 @@
 {
   "name": "kleros-scripts",
   "version": "0.5.0",
-  "description":
-    "Linting and formatting scripts for multiple types of projects.",
-  "keywords": ["linter", "formatter", "standard-js"],
+  "description": "Linting and formatting scripts for multiple types of projects.",
+  "keywords": [
+    "linter",
+    "formatter",
+    "standard-js"
+  ],
   "repository": "https://github.com/kleros/kleros-js-scripts",
   "author": "Kleros",
   "license": "MIT",
@@ -12,8 +15,7 @@
   "scripts": {
     "prettify": "node ./index.js prettify",
     "lint": "node ./index.js lint:scss && node ./index.js lint:js",
-    "test":
-      "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
+    "test": "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
     "precommit": "node ./index.js precommit",
     "commitmsg": "node ./index.js commitmsg",
     "cz": "node ./index.js cz"
@@ -43,7 +45,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-unicorn": "^3.0.1",
     "lint-staged": "^6.1.0",
-    "prettier": "^1.10.2",
+    "prettier": "^1.13.4",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-order": "^0.8.0",
