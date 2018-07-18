@@ -28,16 +28,6 @@ module.exports = {
     'prefer-const': 2,
     'arrow-body-style': [2, 'as-needed'],
     curly: [2, 'multi'],
-    'padding-line-between-statements': [
-      2,
-      { blankLine: 'never', prev: '*', next: '*' }, // Avoid unnecessary blank lines
-      { blankLine: 'always', prev: '*', next: 'block-like' }, // Blank lines before blocks
-      { blankLine: 'always', prev: 'block-like', next: '*' }, // Blank lines after blocks
-      { blankLine: 'never', prev: 'const', next: '*' }, // Never have blank lines after const statements
-      { blankLine: 'always', prev: '*', next: 'return' }, // Blank lines before return statements
-      { blankLine: 'any', prev: 'cjs-import', next: '*' }, // Ignore commonjs imports
-      { blankLine: 'any', prev: 'import', next: '*' } // Ignore ES6 imports
-    ],
 
     // unicorn
     'unicorn/no-fn-reference-in-iterator': 0, // Allows [].map(func)
