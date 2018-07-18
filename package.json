@@ -1,6 +1,6 @@
 {
   "name": "kleros-scripts",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Linting and formatting scripts for multiple types of projects.",
   "keywords": [
     "linter",
