@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-
 process.on('unhandledRejection', err => {
   throw err
 })
-
 const spawn = require('cross-spawn')
 const runCommitizen = require('commitizen/dist/cli/git-cz').bootstrap
 
@@ -18,7 +16,6 @@ const runCommand = (command, args, { resolveCommand = true } = {}) => {
       stdio: 'inherit'
     }
   )
-
   if (result.signal || result.status) {
     if (result.signal === 'SIGKILL')
       console.log(
@@ -28,11 +25,9 @@ const runCommand = (command, args, { resolveCommand = true } = {}) => {
       console.log(
         'Failed because the process exited too early. Someone might have called `kill` or `killall`, or the system could be shutting down.'
       )
-
     process.exit(1)
   }
 }
-
 const scriptName = process.argv[2]
 switch (scriptName) {
   case 'prettify':
