@@ -41,5 +41,6 @@ curl -u $TOKEN:x-oauth-basic --include --request POST --data '{ "name": "depends
 
 # Create info labels
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{ "name": "high priority", "color": "ff2800", "description": "Should be done first." }' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{ "name": "low priority", "color": "d3d3d3", "description": "Should be done last." }' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{ "name": "good for newcomers :baby_bottle:", "color": "fff68f", "description": "Good for new contributors." }' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{ "name": "invalid :warning:", "color": "f5f5dc", "description": "Invalid issue that should be ignored." }' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
