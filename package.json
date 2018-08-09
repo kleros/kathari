@@ -14,11 +14,15 @@
   "bin": "./index.js",
   "scripts": {
     "prettify": "node ./index.js prettify",
-    "lint": "node ./index.js lint:scss && node ./index.js lint:js",
+    "lint": "node ./index.js lint:sol && node ./index.js lint:scss && node ./index.js lint:js",
     "test": "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
     "precommit": "node ./index.js precommit",
     "commitmsg": "node ./index.js commitmsg",
     "cz": "node ./index.js cz"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "standard-version": "^4.3.0"
   },
   "peerDependencies": {
     "eslint-plugin-react": "^7.6.1"
@@ -46,14 +50,11 @@
     "eslint-plugin-unicorn": "^3.0.1",
     "lint-staged": "^6.1.0",
     "prettier": "^1.13.7",
+    "solium": "^1.1.8",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-order": "^0.8.0",
     "stylelint-scss": "^2.3.0",
     "stylelint-selector-bem-pattern": "^2.0.0"
-  },
-  "devDependencies": {
-    "husky": "^0.14.3",
-    "standard-version": "^4.3.0"
   }
 }

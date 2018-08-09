@@ -39,6 +39,15 @@ switch (scriptName) {
       './{src,.storybook,stories,demo/src,mocks,tests}/**/*.js{on,}'
     ])
     break
+  case 'lint:sol':
+    runCommand('solium', [
+      '--no-soliumignore',
+      '--config',
+      resolveInDir('./.soliumrc.js'),
+      '--dir',
+      './contracts'
+    ])
+    break
   case 'lint:scss':
     runCommand('stylelint', [
       '--config',
