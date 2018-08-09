@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0"></a>
+
+# [0.10.0](https://github.com/kleros/kleros-js-scripts/compare/v0.9.0...v0.10.0) (2018-08-09)
+
+### Features
+
+- **lint:** lint in test folder ([85aecbd](https://github.com/kleros/kleros-js-scripts/commit/85aecbd))
+
 <a name="0.9.0"></a>
 
 # [0.9.0](https://github.com/kleros/kleros-js-scripts/compare/v0.8.0...v0.9.0) (2018-08-09)
