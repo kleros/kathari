@@ -20,6 +20,11 @@
     "commitmsg": "node ./index.js commitmsg",
     "cz": "node ./index.js cz"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "devDependencies": {
     "husky": "^0.14.3",
     "standard-version": "^4.3.0"
