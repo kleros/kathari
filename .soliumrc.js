@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['security'],
   rules: {
     quotes: ['error', 'double'],
-    indentation: ['error', 4]
+    indentation: ['error', 4],
+    'security/no-block-members': ['off']
   }
 }
