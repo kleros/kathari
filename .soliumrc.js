@@ -4,7 +4,7 @@ module.exports = {
   rules: {
     quotes: ['error', 'double'],
     indentation: ['error', 4],
-    'security/no-block-members': ['off'],
-    'error-reason': ['error']
+    'error-reason': ['error'],
+    'security/no-block-members': ['off']
   }
 }
