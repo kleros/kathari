@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0"></a>
+
+# [0.11.0](https://github.com/kleros/kleros-js-scripts/compare/v0.10.1...v0.11.0) (2018-09-14)
+
+### Features
+
+- **solium:** allow send and inline assembly ([1c40dd2](https://github.com/kleros/kleros-js-scripts/commit/1c40dd2))
+
 <a name="0.10.1"></a>
 
 ## [0.10.1](https://github.com/kleros/kleros-js-scripts/compare/v0.10.0...v0.10.1) (2018-09-12)
