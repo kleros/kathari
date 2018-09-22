@@ -25,7 +25,7 @@ const runCommand = (command, args, { resolveCommand = true } = {}) => {
       console.log(
         'Failed because the process exited too early. Someone might have called `kill` or `killall`, or the system could be shutting down.'
       )
-    process.exit(1)
+    throw new Error(1)
   }
 }
 const scriptName = process.argv[2]
@@ -73,7 +73,14 @@ switch (scriptName) {
     break
   case 'precommit':
     runCommand('lint-staged', ['--config', resolveInDir('./.lintstagedrc.js')])
-    runCommand('yarn', ['run', 'lint'], { resolveCommand: false })
+    runCommand('git', ['stash', '--keep-index', '--include-untracked'], {
+      resolveCommand: false
+    })
+    try {
+      runCommand('yarn', ['run', 'lint'], { resolveCommand: false })
+    } finally {
+      runCommand('git', ['stash', 'pop'], { resolveCommand: false })
+    }
     runCommand('yarn', ['test'], { resolveCommand: false })
     break
   case 'cz':
