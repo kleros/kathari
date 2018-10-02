@@ -6,9 +6,7 @@ const githubAPICaller = (path, { method = 'GET', body } = {}) =>
   fetch(`https://api.github.com${encodeURI(path)}`, {
     method,
     headers: {
-      Authorization: `Basic ${Buffer.from(
-        `epiqueras:${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`
-      ).toString('base64')}`
+      Authorization: `token ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`
     },
     body: body && JSON.stringify(body)
   }).then(res => (method === 'DELETE' ? res : res.json()))
