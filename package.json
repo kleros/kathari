@@ -13,12 +13,13 @@
   "private": false,
   "bin": "./index.js",
   "scripts": {
-    "prettify": "node ./index.js prettify",
-    "lint": "node ./index.js lint:sol && node ./index.js lint:scss && node ./index.js lint:js",
+    "prettify": "./index.js prettify",
+    "lint": "./index.js lint:sol && ./index.js lint:scss && ./index.js lint:js",
     "test": "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
-    "precommit": "node ./index.js precommit",
-    "commitmsg": "node ./index.js commitmsg",
-    "cz": "node ./index.js cz"
+    "precommit": "./index.js precommit",
+    "commitmsg": "./index.js commitmsg",
+    "cz": "./index.js cz",
+    "set-github-labels": "env-cmd ./.env ./src/scripts/set-github-labels.js"
   },
   "commitlint": {
     "extends": [
@@ -26,7 +27,9 @@
     ]
   },
   "devDependencies": {
+    "env-cmd": "^8.0.2",
     "husky": "^0.14.3",
+    "isomorphic-fetch": "^2.2.1",
     "standard-version": "^4.3.0"
   },
   "peerDependencies": {
