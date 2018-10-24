@@ -1,5 +1,5 @@
 {
-  "name": "kleros-scripts",
+  "name": "@kleros/kathari",
   "version": "0.12.0",
   "description": "Linting and formatting scripts for multiple types of projects.",
   "keywords": [
@@ -7,7 +7,7 @@
     "formatter",
     "standard-js"
   ],
-  "repository": "https://github.com/kleros/kleros-js-scripts",
+  "repository": "https://github.com/kleros/kathari",
   "author": "Kleros",
   "license": "MIT",
   "private": false,
