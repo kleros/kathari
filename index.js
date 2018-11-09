@@ -59,7 +59,6 @@ switch (scriptName) {
     runCommand('eslint', [
       '--config',
       resolveInDir('./.eslintrc.js'),
-      './*.js',
       './{src,.storybook,stories,demo/src,mocks,tests,test}/**/*.js'
     ])
     break
