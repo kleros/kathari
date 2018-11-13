@@ -29,6 +29,7 @@ const runCommand = (command, args, { resolveCommand = true } = {}) => {
   }
 }
 const scriptName = process.argv[2]
+const flag = process.argv[3]
 switch (scriptName) {
   case 'prettify':
     runCommand('prettier', [
@@ -56,19 +57,22 @@ switch (scriptName) {
     ])
     break
   case 'lint:js':
-    runCommand('eslint', [
-      '--config',
-      resolveInDir('./.eslintrc.js'),
-      './*.js',
-      './{src,.storybook,stories,demo/src,mocks,tests,test}/**/*.js'
-    ])
+    runCommand(
+      'eslint',
+      [
+        '--config',
+        resolveInDir('./.eslintrc.js'),
+        flag !== '--no-root' && './*.js',
+        './{src,.storybook,stories,demo/src,mocks,tests,test}/**/*.js'
+      ].filter(s => s)
+    )
     break
   case 'commitmsg':
     runCommand('commitlint', [
       '--config',
       resolveInDir('./.commitlintrc.js'),
-      '--edit',
-      '$GIT_PARAMS'
+      '--env',
+      'HUSKY_GIT_PARAMS'
     ])
     break
   case 'precommit':
@@ -86,8 +90,8 @@ switch (scriptName) {
   case 'cz':
     process.argv = []
     runCommitizen({
-      cliPath: './node_modules/commitizen',
-      config: { path: './node_modules/@commitlint/prompt' }
+      cliPath: resolveInDir('./node_modules/commitizen'),
+      config: { path: resolveInDir('./node_modules/@commitlint/prompt') }
     })
     break
   default:

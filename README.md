@@ -14,8 +14,10 @@
 
 ## Scripts
 
-- `@kleros/kathari prettify` - Apply prettier to the entire project.
-- `@kleros/kathari lint` - Lint the entire project's `.js` and `.scss` files.
-- `@kleros/kathari commitmsg` - Lint commit messages on a githook.
-- `@kleros/kathari precommit` - Lint and run tests on a githook.
-- `@kleros/kathari cz` - Run commitizen.
+- `kathari prettify` - Apply prettier to the entire project.
+- `kathari lint:sol` - Lint the entire project's `.sol` files.
+- `kathari lint:scss` - Lint the entire project's `.scss` files.
+- `kathari lint:js [--no-root]` - Lint the entire project's `.js` files. Pass in `--no-root` if there are no `.js` files in the project root.
+- `kathari commitmsg` - Lint commit messages on a githook.
+- `kathari precommit` - Lint and run tests on a githook.
+- `kathari cz` - Run commitizen.
