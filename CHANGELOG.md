@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.13.0"></a>
+
+# [0.13.0](https://github.com/kleros/kathari/compare/v0.12.0...v0.13.0) (2018-11-13)
+
+### Features
+
+- **set-github-labels:** new labels and set all repos in one run ([9ea48a8](https://github.com/kleros/kathari/commit/9ea48a8))
+- **set-github-labels:** simplify auth ([c59bc95](https://github.com/kleros/kathari/commit/c59bc95))
+
 <a name="0.12.0"></a>
 
 # [0.12.0](https://github.com/kleros/kathari/compare/v0.11.0...v0.12.0) (2018-09-22)
