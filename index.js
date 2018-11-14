@@ -7,7 +7,8 @@ const runCommitizen = require('commitizen/dist/cli/git-cz').bootstrap
 
 const { resolveInDir, resolveBin } = require('./resolve-utils')
 
-const CLICargs = process.argv.slice(3)
+const flag = process.argv[3]
+const CLICargs = process.argv.slice(flag === '--no-root' ? 4 : 3)
 const runCommand = (command, args, { resolveCommand = true } = {}) => {
   const result = spawn.sync(
     resolveCommand ? resolveBin(command) : command,
@@ -29,7 +30,6 @@ const runCommand = (command, args, { resolveCommand = true } = {}) => {
   }
 }
 const scriptName = process.argv[2]
-const flag = process.argv[3]
 switch (scriptName) {
   case 'prettify':
     runCommand('prettier', [
