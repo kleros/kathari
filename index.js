@@ -90,8 +90,8 @@ switch (scriptName) {
   case 'cz':
     process.argv = []
     runCommitizen({
-      cliPath: resolveInDir('./node_modules/commitizen'),
-      config: { path: resolveInDir('./node_modules/@commitlint/prompt') }
+      cliPath: './node_modules/commitizen',
+      config: { path: './node_modules/@commitlint/prompt' }
     })
     break
   default:
