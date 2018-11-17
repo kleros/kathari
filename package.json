@@ -1,6 +1,6 @@
 {
   "name": "@kleros/kathari",
-  "version": "0.13.2",
+  "version": "0.13.3",
   "description": "Linting and formatting scripts for multiple types of projects.",
   "keywords": [
     "linter",
