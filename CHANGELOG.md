@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.14.0"></a>
+
+# [0.14.0](https://github.com/kleros/kathari/compare/v0.13.3...v0.14.0) (2018-11-18)
+
+### Features
+
+- **index:** support styled component linting ([55a6c12](https://github.com/kleros/kathari/commit/55a6c12))
+
 <a name="0.13.3"></a>
 
 ## [0.13.3](https://github.com/kleros/kathari/compare/v0.13.2...v0.13.3) (2018-11-17)
