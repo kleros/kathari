@@ -52,8 +52,15 @@ switch (scriptName) {
   case 'lint:scss':
     runCommand('stylelint', [
       '--config',
-      resolveInDir('./.stylelintrc.js'),
+      resolveInDir('./.scss.stylelintrc.js'),
       './{src,demo/src}/**/*.scss'
+    ])
+    break
+  case 'lint:styled':
+    runCommand('stylelint', [
+      '--config',
+      resolveInDir('./.styled.stylelintrc.js'),
+      './{src,demo/src}/**/*.js'
     ])
     break
   case 'lint:js':

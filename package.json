@@ -14,7 +14,7 @@
   "bin": "./index.js",
   "scripts": {
     "prettify": "./index.js prettify",
-    "lint": "./index.js lint:sol && ./index.js lint:scss && ./index.js lint:js",
+    "lint": "./index.js lint:sol && ./index.js lint:scss && ./index.js lint:styled && ./index.js lint:js",
     "test": "yarn run prettify && yarn run lint && lint-staged --config ./.lintstagedrc.js",
     "cz": "./index.js cz",
     "set-github-labels": "env-cmd ./.env ./src/scripts/set-github-labels.js"
@@ -34,7 +34,8 @@
     "env-cmd": "^8.0.2",
     "husky": "^1.1.4",
     "isomorphic-fetch": "^2.2.1",
-    "standard-version": "^4.3.0"
+    "standard-version": "^4.3.0",
+    "styled-components": "^4.1.1"
   },
   "peerDependencies": {
     "eslint-plugin-react": "^7.6.1"
@@ -64,8 +65,11 @@
     "prettier": "^1.13.7",
     "solium": "^1.1.8",
     "stylelint": "^9.8.0",
+    "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-standard": "^18.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^1.0.0",
+    "stylelint-processor-styled-components": "^1.5.1",
     "stylelint-scss": "^3.4.0",
     "stylelint-selector-bem-pattern": "^2.0.0"
   }
