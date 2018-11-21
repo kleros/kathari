@@ -1699,6 +1699,15 @@ eslint-plugin-flowtype@^2.0.0:
   dependencies:
     lodash "^4.17.10"
 
+eslint-plugin-import-order-alphabetical@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import-order-alphabetical/-/eslint-plugin-import-order-alphabetical-0.0.1.tgz#b37baa49f32660d5cae8f2edb7d90d81bbcedd22"
+  integrity sha512-TZUkw2z9/U2XiuTwW2JgYZhJ//QQuZpA6XqqhIvqmiol+gSrpJofpDwjfxMOZcxjq/G/TDyWMdjgxQ+ikppTkA==
+  dependencies:
+    eslint-module-utils "^2.2.0"
+    lodash "^4.17.4"
+    resolve "^1.6.0"
+
 eslint-plugin-import@^2.8.0:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.14.0.tgz#6b17626d2e3e6ad52cfce8807a845d15e22111a8"

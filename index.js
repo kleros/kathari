@@ -2,8 +2,8 @@
 process.on('unhandledRejection', err => {
   throw err
 })
-const spawn = require('cross-spawn')
 const runCommitizen = require('commitizen/dist/cli/git-cz').bootstrap
+const spawn = require('cross-spawn')
 
 const { resolveInDir, resolveBin } = require('./resolve-utils')
 

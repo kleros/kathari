@@ -1,6 +1,6 @@
 module.exports = {
   // Plugins
-  plugins: ['unicorn'],
+  plugins: ['unicorn', 'eslint-plugin-import-order-alphabetical'],
 
   // Extends
   extends: [
@@ -57,14 +57,7 @@ module.exports = {
         'newlines-between': 'always'
       }
     ],
-    'sort-imports': [
-      2,
-      {
-        ignoreCase: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['single', 'multiple', 'all', 'none']
-      }
-    ],
+    'import-order-alphabetical/order': 2,
 
     // React JSX
     'react/jsx-filename-extension': [
