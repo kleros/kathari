@@ -43,20 +43,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 2,
     'import/newline-after-import': 2,
     'import/no-named-default': 2,
-    'import/order': [
-      2,
-      {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index'
-        ],
-        'newlines-between': 'always'
-      }
-    ],
+    'import/order': [2, { 'newlines-between': 'always' }],
     'import-order-alphabetical/order': 2,
 
     // React JSX
