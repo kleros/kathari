@@ -4,11 +4,11 @@ const fetch = require('isomorphic-fetch')
 // Helper
 const githubAPICaller = (path, { method = 'GET', body } = {}) =>
   fetch(`https://api.github.com${encodeURI(path)}`, {
-    method,
+    body: body && JSON.stringify(body),
     headers: {
       Authorization: `token ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`
     },
-    body: body && JSON.stringify(body)
+    method
   }).then(res => (method === 'DELETE' ? res : res.json()))
 
 // Run
@@ -28,95 +28,95 @@ const run = async () => {
     // Set new labels for repo
     for (const newLabel of [
       {
-        name: 'duplicate :two:',
         color: 'ededed',
-        description: 'Is a duplicate.'
+        description: 'Is a duplicate.',
+        name: 'duplicate :two:'
       },
       {
-        name: 'starter :baby_bottle:',
         color: 'ffc0cb',
-        description: 'Good for new contributors.'
+        description: 'Good for new contributors.',
+        name: 'starter :baby_bottle:'
       },
       {
-        name: 'Priority: Critical :fire:',
         color: 'ee0701',
-        description: 'Mission critical.'
+        description: 'Mission critical.',
+        name: 'Priority: Critical :fire:'
       },
       {
-        name: 'Priority: High',
         color: 'd93f0b',
-        description: 'Top of to-do list.'
+        description: 'Top of to-do list.',
+        name: 'Priority: High'
       },
       {
-        name: 'Priority: Low',
         color: '0e8a16',
-        description: 'Bottom of to-do list.'
+        description: 'Bottom of to-do list.',
+        name: 'Priority: Low'
       },
       {
-        name: 'Priority: Medium',
         color: 'fbca04',
-        description: 'Somewhere in the middle of to-do list.'
+        description: 'Somewhere in the middle of to-do list.',
+        name: 'Priority: Medium'
       },
       {
-        name: 'Status: Abandoned',
         color: '000000',
-        description: 'The assigned contributor gave up.'
+        description: 'The assigned contributor gave up.',
+        name: 'Status: Abandoned'
       },
       {
-        name: 'Status: Available',
         color: 'c2e0c6',
-        description: 'Open for anyone to work on.'
+        description: 'Open for anyone to work on.',
+        name: 'Status: Available'
       },
       {
-        name: 'Status: Blocked',
         color: 'ee0701',
-        description: 'Blocked by another issue.'
+        description: 'Blocked by another issue.',
+        name: 'Status: Blocked'
       },
       {
-        name: 'Status: In Progress',
         color: 'cccccc',
-        description: 'Someone is already working on it.'
+        description: 'Someone is already working on it.',
+        name: 'Status: In Progress'
       },
       {
-        name: 'Status: On Hold',
         color: 'e99695',
-        description: 'Purposely paused.'
+        description: 'Purposely paused.',
+        name: 'Status: On Hold'
       },
       {
-        name: 'Status: Proposal',
         color: 'd4c5f9',
-        description: "Don't work on it until accepted."
+        description: "Don't work on it until accepted.",
+        name: 'Status: Proposal'
       },
       {
-        name: 'Status: Review Needed',
         color: 'fbca04',
-        description: 'Pending reviews.'
+        description: 'Pending reviews.',
+        name: 'Status: Review Needed'
       },
-      { name: 'Type: Bug :bug:', color: 'ee0701', description: 'Bugs.' },
+      { color: 'ee0701', description: 'Bugs.', name: 'Type: Bug :bug:' },
       {
-        name: 'Type: Documentation :books:',
         color: '5319e7',
-        description: 'Documentation work.'
+        description: 'Documentation work.',
+        name: 'Type: Documentation :books:'
       },
       {
-        name: 'Type: Enhancement :sparkles:',
         color: '1d76db',
-        description: 'Enhancements.'
+        description: 'Enhancements.',
+        name: 'Type: Enhancement :sparkles:'
       },
       {
-        name: 'Type: Maintenance :construction:',
         color: 'fbca04',
-        description: 'Chores.'
+        description: 'Chores.',
+        name: 'Type: Maintenance :construction:'
       },
       {
-        name: 'Type: Question :grey_question:',
         color: 'cc317c',
-        description: 'Queries about the project.'
+        description: 'Queries about the project.',
+        name: 'Type: Question :grey_question:'
       }
     ])
       await githubAPICaller(`/repos/kleros/${repo}/labels`, {
-        method: 'POST',
-        body: newLabel
+        body: newLabel,
+        method: 'POST'
       })
 
     console.log(`Finished setting labels for ${repo}.`)

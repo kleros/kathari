@@ -28,6 +28,7 @@ module.exports = {
     'prefer-const': 2,
     'arrow-body-style': [2, 'as-needed'],
     curly: [2, 'multi'],
+    'sort-keys': 2,
 
     // unicorn
     'unicorn/no-fn-reference-in-iterator': 0, // Allows [].map(func)
