@@ -57,6 +57,14 @@ module.exports = {
         'newlines-between': 'always'
       }
     ],
+    'sort-imports': [
+      2,
+      {
+        ignoreCase: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['single', 'multiple', 'all', 'none']
+      }
+    ],
 
     // React JSX
     'react/jsx-filename-extension': [
