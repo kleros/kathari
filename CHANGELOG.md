@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.15.2"></a>
+
+## [0.15.2](https://github.com/kleros/kathari/compare/v0.15.1...v0.15.2) (2018-11-21)
+
+### Bug Fixes
+
+- **eslint:** more import fixes ([abab10c](https://github.com/kleros/kathari/commit/abab10c))
+
 <a name="0.15.1"></a>
 
 ## [0.15.1](https://github.com/kleros/kathari/compare/v0.15.0...v0.15.1) (2018-11-21)
