@@ -29,6 +29,10 @@ module.exports = {
     'arrow-body-style': [2, 'as-needed'],
     curly: [2, 'multi'],
     'sort-imports': 2,
+    'padding-line-between-statements': [
+      2,
+      { blankLine: 'never', prev: 'import', next: 'import' }
+    ],
     'sort-keys': 2,
 
     // unicorn
