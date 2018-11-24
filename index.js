@@ -5,7 +5,7 @@ process.on('unhandledRejection', err => {
 const runCommitizen = require('commitizen/dist/cli/git-cz').bootstrap
 const spawn = require('cross-spawn')
 
-const { resolveInDir, resolveBin } = require('./resolve-utils')
+const { resolveBin, resolveInDir } = require('./resolve-utils')
 
 const flag = process.argv[3]
 const CLICargs = process.argv.slice(flag === '--no-root' ? 4 : 3)
@@ -102,6 +102,6 @@ switch (scriptName) {
     })
     break
   default:
-    console.log('Unknown script "' + scriptName + '".')
+    console.log(`Unknown script "${scriptName}".`)
     process.exit(1)
 }

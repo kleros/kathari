@@ -1,6 +1,6 @@
 module.exports = {
   // Plugins
-  plugins: ['unicorn'],
+  plugins: ['wyze', 'unicorn', 'react-perf'],
 
   // Extends
   extends: [
@@ -34,6 +34,11 @@ module.exports = {
       { blankLine: 'never', prev: 'import', next: 'import' }
     ],
     'sort-keys': 2,
+    'no-useless-concat': 2,
+    'prefer-template': 2,
+
+    // wyze
+    'wyze/sort-destructuring-keys': 2,
 
     // unicorn
     'unicorn/no-fn-reference-in-iterator': 0, // Allows [].map(func)
@@ -59,6 +64,8 @@ module.exports = {
     ],
     'react/jsx-no-bind': 2,
     'react/jsx-indent': 0,
+    'react/jsx-sort-props': 2,
+    'react/jsx-curly-brace-presence': [2, 'never'],
 
     // React
     'react/prefer-stateless-function': 2,
@@ -68,6 +75,11 @@ module.exports = {
     'react/no-unused-prop-types': 2,
     'react/require-default-props': 2,
     'react/default-props-match-prop-types': 2,
+
+    // React Perf
+    'react-perf/jsx-no-new-object-as-prop': 2,
+    'react-perf/jsx-no-new-array-as-prop': 2,
+    'react-perf/jsx-no-new-function-as-prop': 2,
 
     // JS Standard
     'standard/computed-property-even-spacing': 0,

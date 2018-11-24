@@ -1,4 +1,4 @@
-const { resolve, join } = require('path')
+const { join, resolve } = require('path')
 
 const resolveInDir = filePath => resolve(__dirname, filePath)
 const resolveBin = filePath =>

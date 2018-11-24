@@ -2,7 +2,7 @@
 const fetch = require('isomorphic-fetch')
 
 // Helper
-const githubAPICaller = (path, { method = 'GET', body } = {}) =>
+const githubAPICaller = (path, { body, method = 'GET' } = {}) =>
   fetch(`https://api.github.com${encodeURI(path)}`, {
     body: body && JSON.stringify(body),
     headers: {
