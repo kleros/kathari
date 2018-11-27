@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.20.0"></a>
+
+# [0.20.0](https://github.com/kleros/kathari/compare/v0.19.0...v0.20.0) (2018-11-27)
+
+### Features
+
+- **lint-staged:** use absolute path to prettier ([b3afa53](https://github.com/kleros/kathari/commit/b3afa53))
+
 <a name="0.19.0"></a>
 
 # [0.19.0](https://github.com/kleros/kathari/compare/v0.18.0...v0.19.0) (2018-11-24)
