@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.21.0"></a>
+
+# [0.21.0](https://github.com/kleros/kathari/compare/v0.20.0...v0.21.0) (2019-02-18)
+
+### Features
+
+- **prettier:** upgrade ([167616d](https://github.com/kleros/kathari/commit/167616d))
+
 <a name="0.20.0"></a>
 
 # [0.20.0](https://github.com/kleros/kathari/compare/v0.19.0...v0.20.0) (2018-11-27)
