@@ -54,6 +54,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 2,
     'import/newline-after-import': 2,
     'import/no-named-default': 2,
+    'import/no-useless-path-segments': 2,
 
     // React JSX
     'react/jsx-filename-extension': [
