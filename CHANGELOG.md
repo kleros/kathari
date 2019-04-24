@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.23.0"></a>
+# [0.23.0](https://github.com/kleros/kathari/compare/v0.22.0...v0.23.0) (2019-04-24)
+
+
+### Features
+
+* **eslint:** upgrade ([969e9d0](https://github.com/kleros/kathari/commit/969e9d0))
+
+
+
 <a name="0.22.0"></a>
 
 # [0.22.0](https://github.com/kleros/kathari/compare/v0.21.0...v0.22.0) (2019-03-28)
