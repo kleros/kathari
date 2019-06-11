@@ -92,7 +92,7 @@ switch (scriptName) {
     } finally {
       runCommand('git', ['stash', 'pop'], { resolveCommand: false })
     }
-    runCommand('yarn', ['test'], { resolveCommand: false })
+    runCommand('yarn', ['test:truffle'], { resolveCommand: false })
     break
   case 'cz':
     process.argv = []
